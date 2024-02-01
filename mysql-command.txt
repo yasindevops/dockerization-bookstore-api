@@ -1,0 +1,1 @@
+docker run --name database -v mysqlvolume:/var/lib/mysql --net bookstore -e MYSQL_ROOT_PASSWORD='Aa123' -e MYSQL_USER='clarusway' -e MYSQL_PASSWORD='Clarusway_1' -e MYSQL_DATABASE='bookstore_db' -d mysql:5.7
