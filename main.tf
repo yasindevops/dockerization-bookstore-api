@@ -24,11 +24,11 @@ variable "git-name" {
 }
 
 variable "git-token" {
-  default = "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"
+  default = "<enter your TOKEN number>"
 }
 
 variable "key-name" {
-  default = "firstkey"
+  default = "<enter your pem file's name>"
 }
 
 resource "github_repository" "myrepo" {
