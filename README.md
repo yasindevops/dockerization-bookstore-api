@@ -78,23 +78,23 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ### At the end of the project, following topics are to be covered;
 
-- MySQL Database Configuration
+- MySQL Database Configuration,
 
-- Bash scripting
+- Bash scripting,
 
-- Docker Images
+- Docker Images,
 
-- Docker Compose
+- Docker Compose,
 
-- AWS EC2 Service
+- AWS EC2 Service,
 
-- AWS Security Group Configuration
+- AWS Security Group Configuration,
 
-- AWS Cloudformation Service (Optional)
+- AWS Cloudformation Service (Optional),
 
-- Terraform Configuration with AWS
+- Terraform Configuration with AWS,
 
-- Git & Github for Version Control System
+- Git & Github for Version Control System.
 
 ### At the end of the project, students will be able to;
 
