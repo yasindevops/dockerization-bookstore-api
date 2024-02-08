@@ -1,11 +1,11 @@
-# Import Flask modules
+# Import Flask modules.
 from flask import Flask, jsonify, abort, request, make_response
 from flaskext.mysql import MySQL
 
-# Create an object named app 
+# Create an object named app .
 app = Flask(__name__)
 
-# Configure sqlite database
+# Configure sqlite database.
 app.config['MYSQL_DATABASE_HOST'] = 'database'
 app.config['MYSQL_DATABASE_USER'] = 'clarusway'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'Clarusway_1'
@@ -17,15 +17,15 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Write a function named `init_bookstore_db` which initilazes the bookstore db
-# Create books table within sqlite db and populate with sample data
+# Write a function named `init_bookstore_db` which initilazes the bookstore db.
+# Create books table within sqlite db and populate with sample data.
 # Execute the code below only once.
 def init_bookstore_db():
     # Check if the 'books' table exists
     cursor.execute("SHOW TABLES LIKE 'books';")
     result = cursor.fetchone()
 
-    # If the 'books' table does not exist, create it and populate with sample data
+    # If the 'books' table does not exist, create it and populate with sample data.
     if not result:
         books_table = """
         CREATE TABLE bookstore_db.books(
@@ -47,7 +47,7 @@ def init_bookstore_db():
         cursor.execute(data)
 
 # Write a function named `get_all_books` which gets all books from the books table in the db,
-# and return result as list of dictionary
+# and return result as list of dictionary.
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def get_all_books():
     query = """
@@ -59,7 +59,7 @@ def get_all_books():
     return books
 
 # Write a function named `find_book` which finds book using book_id from the books table in the db,
-# and return result as list of dictionary
+# and return result as list of dictionary.
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def find_book(id):
     query = f"""
@@ -74,7 +74,7 @@ def find_book(id):
 
 
 # Write a function named `insert_book` which inserts book into the books table in the db,
-# and return the newly added book as dictionary
+# and return the newly added book as dictionary.
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def insert_book(title, author):
     insert = f"""
@@ -92,7 +92,7 @@ def insert_book(title, author):
     return {'book_id':row[0], 'title':row[1], 'author':row[2], 'is_sold': bool(row[3])}
 
 # Write a function named `change_book` which updates book into the books table in the db,
-# and return updated added book as dictionary
+# and return updated added book as dictionary.
 # `[{'book_id': 1, 'title':'XXXX', 'author': 'XXXXXX', 'is_sold': 'Yes' or 'No'} ]`.
 def change_book(book):
     update = f"""
