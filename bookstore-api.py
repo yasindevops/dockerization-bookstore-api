@@ -1,11 +1,11 @@
-# Import Flask modules.
+# Import Flask Modules.
 from flask import Flask, jsonify, abort, request, make_response
 from flaskext.mysql import MySQL
 
-# Create an object named app .
+# Create an object named APP.
 app = Flask(__name__)
 
-# Configure sqlite database.
+# Configure SQLITE database.
 app.config['MYSQL_DATABASE_HOST'] = 'database'
 app.config['MYSQL_DATABASE_USER'] = 'clarusway'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'Clarusway_1'
@@ -17,7 +17,7 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-# Write a function named `init_bookstore_db` which initilazes the bookstore db.
+# Write a function named `init_bookstore_db` which initilazes the bookstore DB.
 # Create books table within sqlite db and populate with sample data.
 # Execute the code below only once.
 def init_bookstore_db():
