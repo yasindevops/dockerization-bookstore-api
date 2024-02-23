@@ -1,10 +1,10 @@
 # Project-203: Dockerization of Bookstore Web API (Python Flask) with MySQL
 
-## Description
+## Description:
 
 Bookstore Web API Application aims to create a bookstore web service using Docker to give students the understanding to dockerization of an application. The application code is to be deployed as a RESTful web service with Flask using Dockerfile and Docker Compose on AWS Elastic Compute Cloud (EC2) Instance using Terraform.
 
-## Problem Statement
+## Problem Statement:
 
 ![Project_203](203-bookstore-api.png) 
 
@@ -60,7 +60,7 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
   - Bookstore Web API URL should be given as output byTerraform, after the resources created.
 
-## Project Skeleton
+## Project Skeleton:
 
 ```text
 203-dockerization-bookstore-api-on-python-flask-mysql (folder)
@@ -98,41 +98,41 @@ Bookstore Web API Application aims to create a bookstore web service using Docke
 
 ### At the end of the project, students will be able to;
 
-- configure connection to the `MySQL` database.
+- Configure connection to the `MySQL` database.
 
-- build a Docker image.
+- Build a Docker image.
 
-- configure Docker Compose to run Python Flask app.
+- Configure Docker Compose to run Python Flask app.
 
-- improve bash scripting skills using `user data` section in Terraform to install and setup web application on EC2 Instance
+- Improve bash scripting skills using `user data` section in Terraform to install and setup web application on EC2 Instance
 
-- configure AWS EC2 Instance and Security Groups.
+- Configure AWS EC2 Instance and Security Groups.
 
-- configure Terraform files to use AWS Resources.
+- Configure Terraform files to use AWS Resources.
 
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
+- Use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
-- run the web application on AWS EC2 instance using the GitHub repo as codebase.
+- Run the web application on AWS EC2 instance using the GitHub repo as codebase.
 
-## Steps to Solution
+## Steps to Solution:
   
-- Step 1: Download or clone project definition from `clarusway-aws-workshop` repo on Github
+- Step 1: Download or clone project definition from `clarusway-aws-workshop` repo on Github.
 
-- Step 2: Create project folder for local public repo on your pc
+- Step 2: Create project folder for local public repo on your PC.
 
-- Step 3: Prepare scripts to build a Python Flask App Image using Dockerfile and Docker Compose
+- Step 3: Prepare scripts to build a Python Flask App Image using Dockerfile and Docker Compose.
 
-- Step 4: Prepare a Terrform configuration file to deploy your app on EC2 Instance
+- Step 4: Prepare a Terrform configuration file to deploy your app on EC2 Instance.
 
-- Step 5: Push your application into your own public repo on Github
+- Step 5: Push your application into your own public repo on Github.
 
 - Step 6: Deploy your application on AWS Cloud using Terraform to showcase your app within your team.
 
-## Notes
+## Notes:
 
 - To showcase your projects REST functions, use `curl` command for each HTTP methods namely, `GET`, `POST`, `PUT`, `DELETE`.
 
-## Resources
+## Resources:
 
 - [REpresentational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
